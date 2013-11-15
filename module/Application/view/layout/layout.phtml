@@ -15,6 +15,7 @@
                 ->appendStylesheet($this->basePath() . '/css/styles.css')
         ?>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Share:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div id="wrapper">
@@ -30,14 +31,14 @@
                     </button>
                     <a class="navbar-brand" href="<?= $this->url('home'); ?>">
                         <i class="fa fa-medkit"></i>
-                        Przychodnia Plus
+                        Przychodnia PLUS
                     </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-collapse">
                     <ul class="nav navbar-nav side-nav">
-                        <li>
+                        <li class="active">
                             <a href="index.html">
                                 <i class="fa fa-dashboard"></i> 
                                 Stan PLUS
@@ -76,63 +77,13 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right navbar-user">
-                        <li class="dropdown messages-dropdown hidden">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
-                            <ul class="dropdown-menu ">
-                                <li class="dropdown-header">7 New Messages</li>
-                                <li class="message-preview">
-                                    <a href="#">
-                                        <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                                        <span class="name">John Smith:</span>
-                                        <span class="message">Hey there, I wanted to ask you something...</span>
-                                        <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li class="message-preview">
-                                    <a href="#">
-                                        <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                                        <span class="name">John Smith:</span>
-                                        <span class="message">Hey there, I wanted to ask you something...</span>
-                                        <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li class="message-preview">
-                                    <a href="#">
-                                        <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                                        <span class="name">John Smith:</span>
-                                        <span class="message">Hey there, I wanted to ask you something...</span>
-                                        <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li><a href="#">View Inbox <span class="badge">7</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown alerts-dropdown hidden">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Default <span class="label label-default">Default</span></a></li>
-                                <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
-                                <li><a href="#">Success <span class="label label-success">Success</span></a></li>
-                                <li><a href="#">Info <span class="label label-info">Info</span></a></li>
-                                <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
-                                <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">View All</a></li>
-                            </ul>
-                        </li>
                         <li class="dropdown user-dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-md"></i> Jan Kowalski <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user-md"></i> 
+                                Jan Kowalski 
+                                <b class="caret"></b>
+                            </a>
                             <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-user-md"></i> 
-                                        Profil
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
                                 <li>
                                     <a href="#">
                                         <i class="fa fa-power-off"></i> 

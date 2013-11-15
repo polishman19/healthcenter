@@ -11,4 +11,10 @@ class IndexController extends AbstractActionController
     {
         return ['message' => 'Hello World!'];
     }
+    
+    public function patientAction(){
+        $viewModel = new ViewModel();
+        
+        return $viewModel;
+    }
 }
