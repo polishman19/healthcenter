@@ -1,0 +1,78 @@
+.city-bg{
+    background: url(../img/chicago.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top:0;
+    font-family: 'Open Sans';
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: 'Quattrocento Sans';
+    font-weight:400;
+}
+.fullscreen{
+    width:100%;
+    height:100%;
+}
+
+#login-box{
+    margin:auto;
+    max-width:900px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    border-radius:4px;
+    overflow:hidden;
+}
+
+.lighter-bg{
+    background-color: #fafafb;
+}
+.light-bg{
+    background-color: #F1F1F2;
+}
+.dark-bg{
+    background-color: #3B3A3F;
+    color:#B9BABC;
+
+}   
+.darker-bg{
+    background-color: #353439;
+    color:#B9BABC;
+}
+
+.header-section{
+    height:80px;
+    font-size:20px;
+    /*text-align: center;*/
+    color:#B9BABC;
+}
+.light-border{
+    border-bottom: solid 1px #ccc;
+
+}
+.no-spaces{
+    padding:0;
+    margin:0;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+#login-box p{
+    /*font-weight:600;*/
+    margin-top:20px;
+    font-size:110%;
+}
+
+#navigation{
+    /*height:100%;*/
+    display:inline;
+}
+#page-wrapper{
+    /*margin-left:220px;*/
+    padding-top:20px;
+}

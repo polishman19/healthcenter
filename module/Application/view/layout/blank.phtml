@@ -1,0 +1,38 @@
+<?= $this->doctype(); ?>
+<html class="fullscreen">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Przychodnia Plus</title>
+        <?=
+                $this->headLink()
+                ->appendStylesheet($this->basePath() . '/css/bootstrap.min.css')
+                ->appendStylesheet($this->basePath() . '/css/font-awesome.min.css')
+                ->appendStylesheet($this->basePath() . '/css/sb-admin.css')
+                ->appendStylesheet($this->basePath() . '/css/fullcalendar.css')
+                ->appendStylesheet($this->basePath() . '/css/styles.css')
+                ->appendStylesheet($this->basePath() . '/css/style.css')
+        ?>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Share:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="city-bg fullscreen">
+        <div class="container fullscreen">
+            <?= $this->content; ?>
+        </div><!-- /#page-wrapper -->
+        <div class="clearfix"></div>
+    </body>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <?= $this->inlineScript(); ?>
+    <?php
+    echo $this->headScript()
+            ->appendFile($this->basePath() . '/js/bootstrap.min.js')
+            ->appendFile($this->basePath() . '/js/fullcalendar.min.js')
+            ->appendFile($this->basePath() . '/js/custom.js')
+    ;
+    ?>
+</html>

@@ -1,52 +1,74 @@
- body{
+body{
     font-family: 'Open Sans' serif;
-    /*background: url("../img/bg-pattern.jpg");*/
+    font-family: 'Open Sans';
+    /*background: url("../img/tweed.png");*/
+    background-color: #F1F1F2;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: 'Share';
     font-weight: 600;
 }
-
+.navbar-nav>li {
+float: left;
+}
 .side-nav i{
-    display:block;
-    font-size:30px;
+    /*display:block;*/
+    font-size:18px;
+    color: #8DC0EC;
+}
+.side-nav span{
+    color: #F7F7F7;
 }
 .side-nav li{
     text-align: center;
 }
 .side-nav, .navbar-inverse {
-    background-color: #eee;
-    color:#555;
+    /*    background-color: #eee;
+        color:#555;*/
     border:none;  
+    border-radius:0;
+    margin:0;
 }
 .navbar-inverse{
-    background: #428bca;
-    background: -moz-linear-gradient(top, #69B9DB  0%, #428bca 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#69B9DB ), color-stop(100%,#067ead));
-    background: -webkit-linear-gradient(top, #69B9DB  0%,#428bca 100%);
+    /*    background: #428bca;
+        background: -moz-linear-gradient(top, #69B9DB  0%, #428bca 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#69B9DB ), color-stop(100%,#067ead));
+        background: -webkit-linear-gradient(top, #69B9DB  0%,#428bca 100%);*/
 }
 .navbar-inverse .navbar-nav>li>a {
-    color:#ebebeb;
+    color:#C7C7C7;
 }
 .navbar-inverse .side-nav>li>a {
-    color:#555;
+    color:#C7C7C7;
 }
 .navbar-inverse .navbar-brand {
-    color: #ebebeb;
-    font-size: 20px;
-    margin-left: 84px;
-    font-family: 'Share';
+    /*    color: #ebebeb;
+        font-size: 20px;
+        margin-left: 84px;
+        font-family: 'Share';*/
 }
 .navbar-inverse .navbar-nav>.dropdown>a .caret {
     border-top-color: #ebebeb;
     border-bottom-color: #ebebeb;
 }
+@media (max-width: 930px) {
+    .side-nav span{
+        display:none;
+    }
+    
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+        /*display:inline;*/
+    }
+}
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-    background-color: #428bca;
-    color:#fff;
+    /*background-color: #F1F1F2;*/
+    border-radius: 5px 5px 0 0;
+    color:#555;
+    border-bottom: 3px solid #8DC0EC;
+color: #555;
 }
 .side-nav{
-    border-right: solid 3px #428bca;
+    /*border-right: solid 3px #428bca;*/
 }
 h1{
     border-bottom: 1px solid #ddd ;
