@@ -25,14 +25,16 @@
         <div id="wrapper" class="">
             <div id="navigation" class="no-spaces navigation">
                 <!-- Sidebar -->
-                <nav class="navbar navbar-inverse dark-bg" role="navigation">
+                <nav class="navbar navbar-inverse dark-bg" role="navigation">                        
+                    <!--<a id="main-menu-toggle" class="hidden-phone open"><i class="fa fa-reorder"></i></a>-->
+
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-<!--                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>-->
+                        <!--                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>-->
                         <a class="navbar-brand" href="<?= $this->url('home', array('action' => 'index')); ?>">
                             <i class="fa fa-medkit"></i>
                             Przychodnia PLUS
@@ -68,7 +70,7 @@
                             </li>
                         </ul>
 
-<!--                        <ul class="nav navbar-nav navbar-right navbar-user">
+                        <ul class="nav navbar-nav navbar-right navbar-user">
                             <li class="dropdown user-dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-user-md"></i> 
@@ -84,13 +86,61 @@
                                     </li>
                                 </ul>
                             </li>
-                        </ul>-->
+                        </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
             </div>
-            <div id="page-wrapper" class="container fullscreen light-bg">
-                <?= $this->content; ?>
-            </div><!-- /#page-wrapper -->
+            <div id="content">
+                <div class="container fullscreen light-bg">
+                    <div class="row">
+                        <div id="sidebar-left" class="col-sm-1" style="min-height: 0px; display: block;">
+                            <div class="nav-collapse sidebar-nav">            
+                                <ul id="navigation" class="nav nav-tabs nav-stacked">
+                                    <li class="active">
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i> 
+                                            <span class="hidden-sm">
+                                                Menu 1                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <i class="fa fa-bookmark-o"></i>
+                                            <span class="hidden-sm">
+                                                Menu 2                
+                                            </span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <i class="fa fa-umbrella"></i>
+                                            <span class="hidden-sm"> 
+                                                Menu 3                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#">
+                                            <i class="fa fa-book"></i>
+                                            <span class="hidden-sm">
+                                                Menu 4                
+                                            </span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="page-wrapper" class="col-sm-11">
+                            <?= $this->content; ?>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div><!-- /#page-wrapper -->
+            </div>
             <div class="clearfix"></div>
         </div><!-- /#wrapper -->
     </body>    
